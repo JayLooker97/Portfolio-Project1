@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/font-awesome/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-social/bootstrap-social.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Orbitron|Open+Sans"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-dark navbar-expand-lg p-md-3">
+      <div class="container">
+        <a href="#" class="text-decoration-none">
+          <h2 class="d-block d-sm-none mt-3">FRONTEND DEV</h2>
+        </a>
+        <div class="mx-auto"></div>
+        <button
+          type="button"
+          class="navbar-toggler mr-2"
+          data-toggle="collapse"
+          data-target="#navCollapse"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navCollapse">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="aboutContent" class="nav-link">About</a>
+            </li>
+            <div class="navbar-brand d-none d-lg-block d-md-block">
+              <a href="#" class="navbar-brand ml-5">
+                <h2 class="text-danger">FRONTEND DEV</h2>
+              </a>
+            </div>
+            <div class="dropdown">
+              <li class="nav-item">
+                <a
+                  role="button"
+                  id="dropdownMenuLink"
+                  data-toggle="dropdown"
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  aria-haspopup="true"
+                  aria-expanded="false"
+                  >Work</a
+                >
+                <div
+                  class="dropdown-menu bg-dark"
+                  aria-labelled-by="dropdownMenuLink"
+                >
+                  <a class="dropdown-item" href="#">Landing Pages</a>
+                  <a class="dropdown-item" href="#">Mobile Apps</a>
+                  <a class="dropdown-item" href="#">Dynamic websites</a>
+                  <a class="dropdown-item" href="#">Current Projects</a>
+                </div>
+              </li>
+            </div>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="bg-welcome">
+      <div class="container-fluid">
+        <div class="row row-content">
+          <div class="col-sm-2 ml-3 text-left">
+            <div class="welcome-text text-center">
+              <h2 class="text-danger">Welcome,</h2>
+            </div>
+          </div>
+          <div class="col text-left mt-3 offset-sm-6">
+            <div class="text-center">
+              <h2 class="welcome-name">I am Joseph Looker</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 text-right">
+            <div class="name-text text-center">
+              <h3 class="text-white">What I Do</h3>
+            </div>
+          </div>
+          <div class="col-sm-4 mt-3 offset-sm-5">
+            <div class="bio-text text-center">
+              <h5 class="text-white">
+                Frontend Development<span class="text-danger"> | </span>Mobile
+                Applications<span class="text-danger"> | </span> UI/UX
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row row-content">
+        <div class="col-12 col-lg-7 mx-auto about-box p-5">
+          <div class="col-4">
+            <div class="about-header text-left ml-lg-5">
+              <div class="about-title">
+                <h2>About Me</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-5 mt-5">
+              <div class="media-body text-left">
+                <h5 class="about-text">
+                  I am a US Army infantry(11B) veteran and Front end developer.
+                  I mainly focus my time on coding complex and dynamic websites,
+                  with an emphasis on UI/UX. In my free time you can find me in
+                  the ocean catching waves or spearfishing. I have around a year
+                  of experience in front end web development, 7 months
+                  completely self-taught and 4 and half months of a more formal
+                  education via Nucamps front end Development coding bootcamp.
+                  Check out my work!
+                </h5>
+              </div>
+              <div
+                class="hire-btn text-right mt-4 d-none d-lg-block"
+                id="hireMe"
+              >
+                <button class="btn btn-lg btn-danger">Hire Me</button>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="media float-lg-right">
+                <img
+                  src="assets/aboutImg.jpg"
+                  alt="aboutImg"
+                  class="image-fluid"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-12 mt-5 mb-5 p-5">
+          <div class="hobby-header text-center">
+            <h1 class="hobby-title border-bottom border-dark">Hobbies</h1>
+          </div>
+          <div class="ul list-unstyled hobby-list ml-lg-5 mt-5">
+            <li>
+              <h4 class="list-title">Surfing</h4>
+              <div class="list-text">
+                <p class="text-white">
+                  Surfing is probably my biggest passion, it is the only time my
+                  brain is at peace and the next wave is the only thing on my
+                  mind
+                </p>
+              </div>
+            </li>
+            <li>
+              <h4 class="list-title">Fly Fishing</h4>
+              <div class="list-text">
+                <p class="text-white">
+                  When the waves are flat you can find me kayaking a random
+                  river trying out new fly patterns
+                </p>
+              </div>
+            </li>
+            <li>
+              <h4 class="list-title">Spearfishing</h4>
+              <div class="list-text">
+                <p class="text-white">
+                  Spearfishing is one of the ways I prefer to fish as its the
+                  most sustainable form of fishing catch, cook, repeat. We only
+                  have one earth and wildlife conservation is at the top of my
+                  concerns
+                </p>
+              </div>
+            </li>
+            <li>
+              <h4 class="list-title">Web Development</h4>
+              <div class="list-text">
+                <p class="text-white">
+                  Next to surfing, Web development/programming is my next
+                  favorite passion. It keeps my mind occupied and focused and I
+                  love the ability to see what is possible with computer based
+                  languages
+                </p>
+              </div>
+            </li>
+          </div>
+        </div>
+        <div class="col p-5">
+          <div class="background-header text-center">
+            <h2 class="background-title">Background</h2>
+          </div>
+          <div class="row mt-5">
+            <div class="col-12 col-lg-4 mb-5">
+              <div class="card bg-card p-3" style="height: 24rem">
+                <div class="card-header">
+                  <h3 class="card-title">US Army</h3>
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li class="background-item">
+                      <h5>
+                        11B <span class="text-danger"> | </span> Infantryman
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>SPC</h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        Saw gunner <span class="text-danger"> | </span> Rifleman
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        Deployment <span class="text-danger"> | </span> Africa
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        3 yrs 6 mos <span class="text-danger"> | </span> Fort
+                        Stewart
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4 mb-5">
+              <div class="card bg-card p-3" style="height: 24rem">
+                <div class="card-header">
+                  <h3 class="card-title">Coding</h3>
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li class="background-item">
+                      <h5>
+                        Frontend Dev<span class="text-danger"> | </span> 1 year
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        React JS
+                        <span class="text-danger"> | </span> React-Native
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        Responsive Web Design
+                        <span class="text-danger"> | </span> Mobiile Apps
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        Nucamp<span class="text-danger"> | </span> Front-End
+                        Course
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card bg-card p-3" style="height: 24rem">
+                <div class="card-header">
+                  <h3 class="card-title">Character</h3>
+                </div>
+                <div class="card-body">
+                  <ul class="list-unstyled">
+                    <li class="background-item">
+                      <h5>
+                        Work Ethic <span class="text-danger"> | </span> Until
+                        it's Done
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        Determined
+                        <span class="text-danger"> | </span> Motivated
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        Skillful <span class="text-danger"> | </span> Adaptable
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        Compatible <span class="text-danger"> | </span> To any
+                        Team
+                      </h5>
+                    </li>
+                    <li class="background-item">
+                      <h5>
+                        Quick Learner <span class="text-danger"> | </span> Learn
+                        on Time off
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col">
+          <div class="skills-header">
+            <h1 class="skills-title">
+              Skills <span class="text-white">:</span>
+            </h1>
+          </div>
+          <div class="jumbotron">
+            <div class="row text-center">
+              <div class="col-4 border-right border-danger">
+                <h4 class="pb-3 border-bottom border-dark skills-text">
+                  React
+                </h4>
+                <img src="assets/react-icon.png" alt="" />
+              </div>
+              <div class="col-4 border-right border-danger">
+                <h4 class="pb-3 border-bottom border-dark skills-text">
+                  React-Native
+                </h4>
+                <img
+                  src="assets/reactnative-icon.png"
+                  alt=""
+                  height="60"
+                  width="60"
+                />
+              </div>
+              <div class="col-4">
+                <h4 class="pb-3 border-bottom border-dark skills-text">
+                  Javascript
+                </h4>
+                <img src="assets/js-icon.png" alt="" />
+              </div>
+              <div class="col-6 mt-5 border-right border-danger">
+                <h4 class="pb-3 border-bottom border-dark skills-text">
+                  HTML5
+                </h4>
+                <img src="assets/html5-icon.png" alt="" />
+              </div>
+              <div class="col-6 mt-5">
+                <h4 class="pb-3 border-bottom border-dark skills-text">
+                  <span class="text-danger">{</span>CSS3<span
+                    class="text-danger"
+                    >}</span
+                  >
+                </h4>
+                <img src="assets/css3-icon.png" alt="" />
+                <img src="assets/scss-icon.png" alt="" />
+                <img src="assets/bootstrap-icon.png" alt="" />
+              </div>
+              <div class="col-4 mt-5 border-right border-danger">
+                <h4 class="pb-3 border-bottom border-dark skills-text">API</h4>
+                <img src="assets/API-icon.png" alt="" />
+              </div>
+              <div class="col-4 mt-5 border-right border-danger">
+                <h4 class="pb-3 border-bottom border-dark skills-text">
+                  Redux
+                </h4>
+                <img src="assets/redux-icon.png" alt="" />
+              </div>
+              <div class="col-4 mt-5">
+                <h4 class="pb-3 border-bottom border-dark skills-text">NPM</h4>
+                <img src="assets/npm-icon.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid work">
+      <div class="row row-content">
+        <div class="col-12 text-center">
+          <div class="work-header">
+            <div class="work-title">
+              <h1 class="text-white">Projects</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 border-right border-bottom border-dark">
+          <h5 class="text-danger text-center">React</h5>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark">
+                <div class="project-header">
+                  <h5 class="text-white">Non-grata</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark">
+                <div class="project-header">
+                  <h5 class="text-white">HalloScream</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 border-left border-bottom border-dark">
+          <h5 class="text-danger text-center">React-Native</h5>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark">
+                <div class="project-header">
+                  <h5 class="text-white">Covert</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark">
+                <div class="project-header">
+                  <h5 class="text-white">Grom Patrol</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 border-right border-top border-bottom border-dark">
+          <h5 class="text-danger text-center">Sanity IO</h5>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark">
+                <div class="project-header">
+                  <h5 class="text-white">E-commerce</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark">
+                <div class="project-header">
+                  <h5 class="text-white">Thoughts</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6 border-left border-top border-bottom border-dark">
+          <h5 class="text-danger text-center">The basics</h5>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark">
+                <div class="project-header">
+                  <h5 class="text-white">Surf Blog</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-5">
+              <div class="card bg-dark">
+                <div class="project-header">
+                  <h5 class="text-white">TBD</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 border-top border-dark">
+          <h5 class="text-white text-center">W.I.P</h5>
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-4">
+              <div class="card currentCard">
+                <h5 class="text-danger">Finance & Maneuver</h5>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card currentCard">
+                <h5 class="text-danger">Social Media</h5>
+              </div>
+            </div>
+            <div class="col-12 col-lg-4">
+              <div class="card currentCard">
+                <h5 class="text-danger">Tattoo Shop</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="container-fluid site-footer">
+      <div class="row mt-4">
+        <div class="col-12 col-lg-4 border-right border-danger">
+          <div class="links-header text-center p-3">
+            <h2 class="links-title border-bottom border-dark p-2">Links</h2>
+          </div>
+          <ul class="list-unstyled text-center">
+            <li class="link-item">
+              <a href="#home" class="text-decoration-none"
+                ><h5 class="footer-links">Home</h5></a
+              >
+            </li>
+            <li class="link-item">
+              <a href="#about" class="text-decoration-none"
+                ><h5 class="footer-links">About</h5></a
+              >
+            </li>
+            <li class="link-item">
+              <a href="#" class="text-decoration-none"
+                ><h5 class="footer-links">Work</h5></a
+              >
+            </li>
+            <li class="link-item">
+              <a href="#" class="text-decoration-none"
+                ><h5 class="footer-links">Contact</h5></a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-lg-4 border-right border-danger">
+          <div class="social-header text-center p-3">
+            <h2 class="social-title border-bottom border-dark p-2">Social</h2>
+          </div>
+          <div class="social-bg text-center mt-3">
+            <a
+              class="btn btn-lg btn-social-icon btn-instagram social-links"
+              href="http://instagram.com/"
+              ><i class="fa fa-instagram"></i
+            ></a>
+            <a
+              class="btn btn-lg btn-social-icon btn-facebook social-link"
+              href="http://facebook.com/"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a
+              class="btn btn-lg btn-social-icon btn-github social-links"
+              href="http://github.com/"
+              ><i class="fa fa-github"></i
+            ></a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="contact-header text-center mt-3 mt-lg-0 p-3">
+            <h2 class="contact-title border-bottom border-dark p-2">Contact</h2>
+          </div>
+          <div class="contact-links text-center">
+            <a
+              role="button"
+              class="btn btn-link text-decoration-none text-white"
+              href="tel:+16199978141"
+              ><i class="fa fa-phone fa-lg text-danger p-2"></i>
+              1-619-997-8141</a
+            ><br />
+            <a
+              role="button"
+              class="btn btn-link text-decoration-none text-white"
+              href="mailto:jaylooker9730@gmail.com"
+              ><i class="fa fa-envelope-o fa-lg text-danger p-2"></i>
+              jaylooker9730@gmail.com</a
+            >
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
