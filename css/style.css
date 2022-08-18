@@ -2,13 +2,13 @@
   --primary-color: #c20a0a;
   --secondary-color: #ffff;
   --darkRed-color: #270000;
+  --black-color: rgb(0, 0, 0);
   --gray-color: #202020;
 }
 
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background-image: linear-gradient(to bottom, rgb(24, 24, 24), rgb(3, 3, 3));
   height: 100%;
   margin: 0;
   padding: 0;
@@ -59,6 +59,14 @@ h1, h2, h3, h4, h5 {
   background-color: var(--gray-color);
   border-bottom: 1px solid var(--primary-color);
 }
+@media  screen and (max-width: 575px) {
+  .collapse {
+    background-color: var(--darkRed-color);
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px var(--secondary-color);
+    margin: 2rem 0rem;
+  }
+}
 
 .row-content {
   padding-top: 400px;
@@ -88,16 +96,6 @@ h1, h2, h3, h4, h5 {
   border-bottom: 3px solid var(--primary-color);
   padding-bottom: 6px;
 }
-.about-box {
-  background-image: linear-gradient(to bottom, rgb(39, 0, 0), rgb(0, 0, 0));
-  border: 3px solid var(--gray-color);
-}
-
-.about-title {
-  text-align: center;
-  border-left: 3px solid var(--primary-color);
-  border-right: 3px solid var(--primary-color);
-}
 
 .hobby-header {
   margin-top: 30px;
@@ -110,10 +108,10 @@ h1, h2, h3, h4, h5 {
 
 .list-title {
   color: var(--primary-color);
-  border-bottom: 2px solid var(--secondary-color);
+  border-bottom: 5px solid var(--darkRed-color);
   border-left: 5px solid var(--primary-color);
   padding: 10px;
-  width: 25rem;
+  width: 20rem;
 }
 
 .list-text {
@@ -121,13 +119,14 @@ h1, h2, h3, h4, h5 {
   text-indent: 4rem;
 }
 
-.bg-card {
-  background-color: transparent;
+.bg-background{
+  background-color: var(--black-color);
 }
 
-.card {
-  border: 4px solid var(--darkRed-color);
-  box-shadow:0px 0px 20px var(--darkRed-color);
+.bg-card {
+  box-shadow: 0px 0px 10px var(--secondary-color);
+  border-radius: 30px;
+  background-color: transparent;
 }
 
 .card-header {
@@ -145,6 +144,8 @@ h1, h2, h3, h4, h5 {
 
 .jumbotron {
   background-image: linear-gradient(to bottom, rgb(39, 0, 0), rgb(0, 0, 0));
+  box-shadow: 0px 0px 10px var(--secondary-color);
+  border-radius: 30px;
 }
 
 @media screen and (max-width: 575px ) {
@@ -153,14 +154,117 @@ h1, h2, h3, h4, h5 {
   }
 }
 
-.project-header {
-  background-color: var(--darkRed-color);
+.bg-carousel {
+  background-color: var(--black-color);
 }
 
-.currentCard {
-  background-color: var(--darkRed-color);
-  border: 3px solid var(--secondary-color);
+.carouselIcons {
+  padding: 0px 10px;
+}
 
+.git-hubIcon1 {
+  background-color: rgba(255, 0, 0, 0.4);
+  border-radius: 50%;
+}
+.git-hubIcon1:hover {
+  box-shadow: 0px 16px 32px 0 rgba(255, 0, 0, 0.4);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+.git-hubIcon2 {
+  background-color: rgba(255, 196, 0, 0.2);
+  border-radius: 50%;
+}
+.git-hubIcon2:hover {
+  box-shadow: 0px 16px 32px 0 rgba(255, 196, 0, 0.2);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+.git-hubIcon3 {
+  background-color: rgba(0, 17, 255, 0.2);
+  border-radius: 50%;
+}
+.git-hubIcon3:hover {
+  box-shadow: 0px 16px 32px 0 rgba(0, 17, 255, 0.2);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+.git-hubIcon4 {
+  background-color: rgba(204, 0, 255, 0.2);
+  border-radius: 50%;
+}
+.git-hubIcon4:hover {
+  box-shadow: 0px 16px 32px 0 rgba(204, 0, 255, 0.2);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+.link-icon1 {
+  background-color: rgba(255, 0, 0, 0.4);
+  border-radius: 50%;
+}
+.link-icon1:hover {
+  box-shadow: 0px 16px 32px 0 rgba(255, 0, 0, 0.4);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+.link-icon2 {
+  background-color: rgba(255, 196, 0, 0.2);
+  border-radius: 50%;
+}
+.link-icon2:hover {
+  box-shadow: 0px 16px 32px 0 rgba(255, 196, 0, 0.2);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+.link-icon3 {
+  background-color: rgba(0, 17, 255, 0.2);
+  border-radius: 50%;
+}
+.link-icon3:hover {
+  box-shadow: 0px 16px 32px 0 rgba(0, 17, 255, 0.2);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+.link-icon4 {
+  background-color: rgba(204, 0, 255, 0.2);
+  border-radius: 50%;
+}
+.link-icon4:hover {
+  box-shadow: 0px 16px 32px 0 rgba(204, 0, 255, 0.2);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  transition: all 0.5s linear;
+}
+
+.workCarousel-title1 {
+  background-color: rgba(255, 0, 0, 0.2);
+  border-radius: 50px;
+  padding: 5px;
+}
+.workCarousel-title2 {
+  background-color: rgba(255, 196, 0, 0.2);
+  border-radius: 50px;
+  padding: 5px;
+}
+.workCarousel-title3 {
+  background-color: rgba(0, 17, 255, 0.2);
+  border-radius: 50px;
+  padding: 5px;
+}
+.workCarousel-title4 {
+  background-color: rgba(204, 0, 255, 0.2);
+  border-radius: 50px;
+  padding: 5px;
+}
+.carousel-btn {
+  color: var(--primary-color)!important;
 }
 
 
